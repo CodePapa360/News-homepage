@@ -1,0 +1,12 @@
+.bottom-newses {
+  grid-area: bottom;
+}
+
+.bottom-newses-container {
+  display: grid;
+  grid-auto-flow: row;
+
+  @media screen and (min-width: 367px) {
+    grid-auto-flow: column;
+  }
+}

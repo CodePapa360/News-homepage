@@ -1,0 +1,268 @@
+/*Reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: var(--Very-dark-blue);
+}
+
+.main-contents {
+  display: grid;
+  grid-template-areas: "front" "right" "bottom";
+  gap: 3rem;
+}
+@media screen and (min-width: 367px) {
+  .main-contents {
+    grid-template-areas: "front front right" "bottom bottom bottom";
+  }
+}
+
+.overlay {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.37);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.container {
+  max-width: 90rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.btnMenu {
+  cursor: pointer;
+}
+
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  max-width: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  height: 100vh;
+  width: 80vw;
+  padding-top: 20%;
+  transform: translateX(100vw);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-items .nav-item {
+  margin-left: 7%;
+  color: var(--Very-dark-blue);
+}
+.nav-items .nav-item:hover {
+  color: var(--Soft-red);
+}
+
+.front-news__thumbnail--desktop {
+  display: none;
+}
+@media screen and (min-width: 367px) {
+  .front-news__thumbnail--desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 367px) {
+  .front-news__thumbnail--mobile {
+    display: none;
+  }
+}
+.front-news {
+  grid-area: front;
+}
+
+.front-news__thumbnail {
+  margin: 2rem 0;
+}
+
+.front-news__header {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.front-news__brief {
+  font-size: 15px;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.btn-read-more {
+  text-transform: uppercase;
+  color: var(--Off-white);
+  background-color: var(--Soft-red);
+  letter-spacing: 3px;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.right-section {
+  grid-area: right;
+}
+
+.right-section {
+  background-color: var(--Very-dark-blue);
+  padding: 1.5rem 1rem;
+}
+
+.right-section__news {
+  display: block;
+  position: relative;
+}
+
+.right-section__news:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.right-section__news:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--Dark-grayish-blue);
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+}
+
+.right-section__header {
+  color: var(--Soft-orange);
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.right-section-news__header {
+  color: var(--Off-white);
+  font-size: 1.2rem;
+}
+
+.right-section-news__brief {
+  color: var(--Grayish-blue);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.bottom-newses {
+  grid-area: bottom;
+}
+
+.bottom-newses-container {
+  display: grid;
+  grid-auto-flow: row;
+}
+@media screen and (min-width: 367px) {
+  .bottom-newses-container {
+    grid-auto-flow: column;
+  }
+}/*# sourceMappingURL=main.css.map */

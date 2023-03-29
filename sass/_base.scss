@@ -1,0 +1,29 @@
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: var(--Very-dark-blue);
+}
+
+.main-contents {
+  display: grid;
+  grid-template-areas:
+    "front"
+    "right"
+    "bottom";
+  gap: 3rem;
+
+  @media screen and (min-width: 367px) {
+    grid-template-areas:
+      "front front right"
+      "bottom bottom bottom";
+  }
+}

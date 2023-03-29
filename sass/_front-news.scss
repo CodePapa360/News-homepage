@@ -1,0 +1,45 @@
+/// Temporary hidden
+.front-news__thumbnail--desktop {
+  display: none;
+
+  @media screen and (min-width: 367px) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 367px) {
+  .front-news__thumbnail--mobile {
+    display: none;
+  }
+}
+
+.front-news {
+  grid-area: front;
+}
+
+.front-news__thumbnail {
+  margin: 2rem 0;
+}
+
+.front-news__header {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.front-news__brief {
+  font-size: 15px;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.btn-read-more {
+  text-transform: uppercase;
+  color: var(--Off-white);
+  background-color: var(--Soft-red);
+  letter-spacing: 3px;
+  display: inline-block;
+
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="/script.js"></script>
+    <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <header class="header">
+            <a class="logo" href="#"><img src="assets/images/logo.svg" alt="Logo"></a>
+            <img class="btn-menu" src="/assets/images/icon-menu.svg" alt="">
+
+            <ul class="nav-items">
+                <img class="btn-close" src="/assets/images/icon-menu-close.svg" alt="">
+                <li><a class="nav-item" href="#">Home</a></li>
+                <li><a class="nav-item" href="#">New</a></li>
+                <li><a class="nav-item" href="#">Popular</a></li>
+                <li><a class="nav-item" href="#">Trending</a></li>
+                <li><a class="nav-item" href="#">Categories</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="main-contents">
+            <section class="front-news">
+                <img class=" front-news__thumbnail front-news__thumbnail--mobile" src="assets/images/image-web-3-mobile.jpg"
+                    alt="News thumbnail">
+                <img class="front-news__thumbnail front-news__thumbnail--desktop" src="assets/images/image-web-3-desktop.jpg"
+                    alt="News thumbnail">
+                <div class="front-news__contents">
+                    <h1 class="front-news__header">The Bright Future of Web 3.0?</h1>
+                    <div class="front-news__contents__descriptions">
+                        <p class="front-news__brief">We dive into the next evolution of the web that claims to put
+                            the power of the platforms back into the hands of the people. But is it really
+                            fulfilling its promise?</p>
+                        <a class="btn-read-more" href="#">Read more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="right-section">
+                <span class="right-section__header">New</span>
+                <ul class="right-section-newses">
+                    <li class="right-section__news">
+                        <a href="#">
+                            <h2 class="right-section-news__header">Hydrogen VS Electric Cars</h2>
+                            <p class="right-section-news__brief">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        </a>
+                    </li>
+                    <li class="right-section__news">
+                        <a href="#">
+                            <h2 class="right-section-news__header">The Downsides of AI Artistry</h2>
+                            <p class="right-section-news__brief">What are the possible adverse effects of on-demand AI
+                                image generation?</p>
+                        </a>
+                    </li>
+                    <li class="right-section__news">
+                        <a href="#">
+                            <h2 class="right-section-news__header">Is VC Funding Drying Up?</h2>
+                            <p class="right-section-news__brief">Private funding by VC firms is down 50% YOY. We take a
+                                look at what that means.</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="bottom-newses">
+                <ul class="bottom-newses-container">
+                    <li>
+                        <a href="#" class="bottom-news">
+                            <img src="assets/images/image-retro-pcs.jpg" alt="News thumbnail"
+                                class="bottom-news__thumbnail">
+                            <div class="bottom-news__contents">
+                                <p class="bottom-news__count">01</p>
+                                <h2 class="bottom-news__header">Reviving Retro PCs</h2>
+                                <p class="bottom-news__brief">What happens when old PCs are given modern upgrades?</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom-news">
+                            <img src="assets/images/image-top-laptops.jpg" alt="News thumbnail"
+                                class="bottom-news__thumbnail">
+                            <div class="bottom-news__contents">
+                                <p class="bottom-news__count">02</p>
+                                <h2 class="bottom-news__header">Top 10 Laptops of 2022</h2>
+                                <p class="bottom-news__brief">Our best picks for various needs and budgets.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom-news">
+                            <img src="assets/images/image-top-laptops.jpg" alt="News thumbnail"
+                                class="bottom-news__thumbnail">
+                            <div class="bottom-news__contents">
+                                <p class="bottom-news__count">03</p>
+                                <h2 class="bottom-news__header">The Growth of Gaming</h2>
+                                <p class="bottom-news__brief">How the pandemic has sparked fresh opportunities.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
