@@ -1,12 +1,44 @@
 .bottom-newses {
   grid-area: bottom;
-}
+  height: auto;
 
-.bottom-newses-container {
-  display: grid;
-  grid-auto-flow: row;
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
 
-  @media screen and (min-width: 367px) {
-    grid-auto-flow: column;
+    li {
+      .bottom-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // align-items: center;
+
+        gap: 1rem;
+
+        img {
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        &__count {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: var(--Grayish-blue);
+        }
+
+        &__header {
+          font-size: 1rem;
+        }
+
+        &__brief {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    @media screen and (min-width: 367px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
