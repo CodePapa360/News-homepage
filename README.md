@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL](https://news-homepage-alamin.netlify.app/)
+- 🖱️[Solution URL]()
+- 🖱️[Live Site URL](https://news-homepage-alamin.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 During the process of building the News Homepage project, I gained a deeper understanding of CSS Grid and its capabilities. I learned how to create a flexible and responsive layout that adapts to different screen sizes and how to use grid-area and grid-template-areas to create a more semantic and readable HTML structure.
 
-I also practiced my skills in using Sass and its features like variables and nesting, which helped me write more concise and maintainable stylesheets. Additionally, I learned how to optimize images for the web by compressing their size and using responsive images with srcset and sizes attributes.
+I also practiced my skills in using Sass and its features like variables and nesting, which helped me write more concise and maintainable stylesheets.
 
 Finally, I gained some insights into good design practices for news websites, such as using contrast to create visual hierarchy, and choosing appropriate font sizes and line heights for easy readability. Overall, the project provided me with lots of learning opportunities and challenged me to make tricky design decisions, which I believe will be valuable for my future front-end development work.
 
