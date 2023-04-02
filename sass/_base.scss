@@ -5,6 +5,26 @@
   --Grayish-blue: hsl(233, 8%, 79%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
+  --Very-dark-blue-bg: hsl(240, 100%, 5%);
+  --Soft-white: hsl(36, 100%, 99%);
+  --contrast-level: 1;
+}
+
+:root.dark-mode {
+  --Soft-orange: hsl(25, 80%, 60%);
+  --Soft-red: hsl(355, 85%, 55%);
+  --Off-white: hsl(0, 0%, 10%);
+  --Grayish-blue: hsl(233, 8%, 50%);
+  --Dark-grayish-blue: hsl(0, 0%, 95%);
+  --Very-dark-blue: hsl(0, 0%, 97%);
+  --Very-dark-blue-bg: hsla(240, 6%, 22%, 0.3);
+  --Soft-white: hsl(0, 0%, 89%);
+  --contrast-level: 10%;
+}
+
+// Common styles
+body {
+  background-color: var(--Off-white);
 }
 
 $bp-large: 90em; // 1440px

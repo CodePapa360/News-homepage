@@ -24,9 +24,21 @@
   padding: 1rem;
 }
 
+.logo {
+  filter: contrast(var(--contrast-level));
+}
+
+#dark-mode-toggle {
+  filter: contrast(var(--contrast-level));
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
 .btn-menu {
   cursor: pointer;
   padding: 0.5rem 0;
+  filter: contrast(var(--contrast-level));
 
   @media screen and (min-width: $bp-mobile-xx) {
     display: none;
@@ -39,6 +51,7 @@
   right: 2rem;
   max-width: 1.5rem;
   cursor: pointer;
+  filter: contrast(var(--contrast-level));
 
   @media screen and (min-width: $bp-mobile-xx) {
     display: none;
@@ -54,7 +67,7 @@
   right: 0;
   z-index: 10;
 
-  background-color: white;
+  background-color: var(--Off-white);
   height: 100vh;
   width: 80vw;
   padding-top: 20%;

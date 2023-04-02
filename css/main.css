@@ -84,6 +84,25 @@ select {
   --Grayish-blue: hsl(233, 8%, 79%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
+  --Very-dark-blue-bg: hsl(240, 100%, 5%);
+  --Soft-white: hsl(36, 100%, 99%);
+  --contrast-level: 1;
+}
+
+:root.dark-mode {
+  --Soft-orange: hsl(25, 80%, 60%);
+  --Soft-red: hsl(355, 85%, 55%);
+  --Off-white: hsl(0, 0%, 10%);
+  --Grayish-blue: hsl(233, 8%, 50%);
+  --Dark-grayish-blue: hsl(0, 0%, 95%);
+  --Very-dark-blue: hsl(0, 0%, 97%);
+  --Very-dark-blue-bg: hsla(240, 6%, 22%, 0.3);
+  --Soft-white: hsl(0, 0%, 89%);
+  --contrast-level: 10%;
+}
+
+body {
+  background-color: var(--Off-white);
 }
 
 ::-moz-selection {
@@ -151,9 +170,21 @@ body {
   padding: 1rem;
 }
 
+.logo {
+  filter: contrast(var(--contrast-level));
+}
+
+#dark-mode-toggle {
+  filter: contrast(var(--contrast-level));
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
 .btn-menu {
   cursor: pointer;
   padding: 0.5rem 0;
+  filter: contrast(var(--contrast-level));
 }
 @media screen and (min-width: 46.875em) {
   .btn-menu {
@@ -167,6 +198,7 @@ body {
   right: 2rem;
   max-width: 1.5rem;
   cursor: pointer;
+  filter: contrast(var(--contrast-level));
 }
 @media screen and (min-width: 46.875em) {
   .btn-close {
@@ -182,7 +214,7 @@ body {
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: white;
+  background-color: var(--Off-white);
   height: 100vh;
   width: 80vw;
   padding-top: 20%;
@@ -268,7 +300,7 @@ body {
 
 .right-section {
   grid-area: right;
-  background-color: var(--Very-dark-blue);
+  background-color: var(--Very-dark-blue-bg);
   padding: 1.5rem 1rem;
 }
 .right-section .right-section__news {
@@ -278,7 +310,7 @@ body {
 .right-section .right-section__news:hover .right-section-news__header {
   color: var(--Soft-orange);
 }
-.right-section .right-section__news:after {
+.right-section .right-section__news:not(:last-child):after {
   content: "";
   height: 1px;
   width: 100%;
@@ -288,7 +320,7 @@ body {
   left: 0;
 }
 .right-section .right-section__news .right-section-news__header {
-  color: var(--Off-white);
+  color: var(--Soft-white);
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
 }

@@ -1,6 +1,6 @@
 .right-section {
   grid-area: right;
-  background-color: var(--Very-dark-blue);
+  background-color: var(--Very-dark-blue-bg);
   padding: 1.5rem 1rem;
 
   .right-section__news {
@@ -11,7 +11,7 @@
       color: var(--Soft-orange);
     }
 
-    &:after {
+    &:not(:last-child):after {
       content: "";
       height: 1px;
       width: 100%;
@@ -22,7 +22,7 @@
     }
 
     .right-section-news__header {
-      color: var(--Off-white);
+      color: var(--Soft-white);
       font-size: 1.2rem;
       transition: color 0.2s ease-in-out;
     }
