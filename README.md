@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- 🖱️[Solution URL]()
+- 🖱️[Solution URL](https://www.frontendmentor.io/solutions/responsive-news-homepage-design-with-sass-YOVVahRS6N)
 - 🖱️[Live Site URL](https://news-homepage-alamin.netlify.app/)
 
 ## My process
