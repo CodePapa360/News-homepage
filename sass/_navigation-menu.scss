@@ -61,7 +61,7 @@
   padding-top: 20%;
   transform: translateX(100vw);
 
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 
   @media screen and (min-width: 750px) {
     transform: translateX(0);
@@ -77,6 +77,7 @@
   .nav-item {
     margin-left: 7%;
     color: var(--Very-dark-blue);
+    transition: color 0.2s ease-in-out;
 
     &:hover {
       color: var(--Soft-red);

@@ -17,9 +17,9 @@
   .attb-link {
     color: var(--clr-attb-primary);
     padding: 0 5px;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     border-bottom: 2px dotted var(--clr-attb-primary);
     font-size: calc(var(--fs-attb) + 4px);
     text-decoration: none;
