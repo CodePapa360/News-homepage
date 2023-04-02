@@ -7,16 +7,16 @@
     grid-template-columns: 1fr;
     gap: 3rem;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $bp-mobile-x) {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
 
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: $bp-medium) {
       gap: 3rem;
     }
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $bp-medium-x) {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
