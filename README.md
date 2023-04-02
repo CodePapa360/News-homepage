@@ -1,8 +1,8 @@
 <h1 align="center">Frontend Mentor - News homepage solution</h1>
-</br>
 <h2 align="center">
-Check out the <a href="" target="_blank">Live Site here</a>.
+Check out the <a href="https://news-homepage-alamin.netlify.app/" target="_blank">Live Site here</a>.
 </h2>
+</br>
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). News homepage is an excellent opportunity to practice CSS Grid skills. There are lots of tricky decisions to make and plenty of learning opportunities!
 
@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https://news-homepage-alamin.netlify.app/)
 
 ## My process
 
