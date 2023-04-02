@@ -4,6 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Responsive News Homepage Design Challenge - Frontend Mentor | Alamin">
+    <meta name="description" content="Check out my responsive and visually appealing News Homepage Design Challenge submission on Frontend Mentor! Built with HTML, CSS, and JavaScript.">
+    <meta property="og:description" content="Check out my responsive and visually appealing News Homepage Design Challenge submission on Frontend Mentor! Built with HTML, CSS, and JavaScript.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CodePapa360/News-homepage/main/screenshots/News%20Homepage%20Challenge%20-%20Desktop%20Screenshot.png?token=GHSAT0AAAAAACAAJK3YFTGJE737FHAPKSIKZBJU3CQ">
+    <meta property="og:url" content="">
+    <meta name="author" content="Alamin | codpapa360">
+    <meta name="keywords" content="News homepage, Homepage, Design, CSS, HTML, Frontend Mentor, Challenge">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Responsive News Homepage Design Challenge - Frontend Mentor | Alamin">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:description" content="Check out my responsive and visually appealing News Homepage Design Challenge submission on Frontend Mentor! Built with HTML, CSS, and JavaScript.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/CodePapa360/News-homepage/main/screenshots/News%20Homepage%20Challenge%20-%20Desktop%20Screenshot.png?token=GHSAT0AAAAAACAAJK3YFTGJE737FHAPKSIKZBJU3CQ">
+    <meta name="twitter:image:alt" content="Responsive News Homepage Design Challenge - Frontend Mentor | Alamin">
+
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.d48f6cd1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -19,16 +34,35 @@
     <div class="container">
 
         <header class="header">
-            <a class="logo" href="#"><img src="/logo.92136df5.svg" alt="Logo"></a>
-            <img class="btn-menu" src="/icon-menu.013914f3.svg" alt="">
+            <a class="logo" target="_blank" href="https://twitter.com/CodePapa360"><img src="/logo.92136df5.svg" alt="Logo"></a>
+
+
+            <div id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewbox="0 96 960 960" width="48"><path d="M518 616Zm6 400H408l12-9.5q12-9.5 26.5-20.5t26.5-20.5l12-9.5h41q97 0 180.5-58T838 754q-90-8-173-41.5T518.5 616Q455 553 422 470.5T381 299q-88 48-144.5 130.5T180 612v11.5q0 6.5 1 11.5l-9.039 3.721q-9.039 3.72-19.961 7.779-10.922 4.059-19.961 7.779L123 658q-2-13-2.5-24t-.5-22q0-146 93-257.5T450 216q-18 98 11 192.635 29 94.635 100 165.736 71 71.101 165.5 100.143Q821 703.555 920 685.529q-26 144.206-138 237.338Q670 1016 524 1016Zm-284-60h180q33.333 0 56.667-23.265Q500 909.471 500 876.235 500 843 477.138 819.5T422 796h-39l-15-35q-17-39-51.688-62-34.687-23-76.312-23-57 0-98.5 41T100 816q0 58.333 40.833 99.167Q181.667 956 240 956Zm0 60q-83 0-141.5-58.5T40 816q0-83 58.5-141.5T240 616q60 0 109.5 32.5T423 736q57 2 97 42.5t40 97.5q0 58-41 99t-99 41H240Z"></path></svg>
+            </div>
+
+            <div class="btn-menu">
+                <img src="/icon-menu.013914f3.svg" alt="">
+            </div>
+
 
             <ul class="nav-items">
                 <img class="btn-close" src="/icon-menu-close.48ac369a.svg" alt="">
-                <li><a class="nav-item" href="#">Home</a></li>
-                <li><a class="nav-item" href="#">New</a></li>
-                <li><a class="nav-item" href="#">Popular</a></li>
-                <li><a class="nav-item" href="#">Trending</a></li>
-                <li><a class="nav-item" href="#">Categories</a></li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">New</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Popular</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Trending</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Categories</a>
+                </li>
             </ul>
             
         </header>
@@ -43,7 +77,7 @@
                         <p class="front-news__brief">We dive into the next evolution of the web that claims to put
                             the power of the platforms back into the hands of the people. But is it really
                             fulfilling its promise?</p>
-                        <a class="btn-read-more" href="#">Read more</a>
+                        <a class="btn-read-more" target="_blank" href="https://twitter.com/CodePapa360">Read more</a>
                     </div>
                 </div>
             </section>
@@ -51,20 +85,20 @@
                 <span class="right-section__header">New</span>
                 <ul class="right-section-newses">
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">Hydrogen VS Electric Cars</h2>
                             <p class="right-section-news__brief">Will hydrogen-fueled cars ever catch up to EVs?</p>
                         </a>
                     </li>
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">The Downsides of AI Artistry</h2>
                             <p class="right-section-news__brief">What are the possible adverse effects of on-demand AI
                                 image generation?</p>
                         </a>
                     </li>
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">Is VC Funding Drying Up?</h2>
                             <p class="right-section-news__brief">Private funding by VC firms is down 50% YOY. We take a
                                 look at what that means.</p>
@@ -72,10 +106,10 @@
                     </li>
                 </ul>
             </section>
-            <section class="bottom-newses">
+            <aside class="bottom-newses">
                 <ul class="bottom-newses-container">
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="/image-retro-pcs.6c30ebae.jpg" alt="News thumbnail" class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
                                 <p class="bottom-news__count">01</p>
@@ -85,7 +119,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="/image-top-laptops.33939454.jpg" alt="News thumbnail" class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
                                 <p class="bottom-news__count">02</p>
@@ -95,7 +129,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="/image-gaming-growth.34328616.jpg" alt="News thumbnail" class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
                                 <p class="bottom-news__count">03</p>
@@ -105,8 +139,20 @@
                         </a>
                     </li>
                 </ul>
-            </section>
+            </aside>
         </main>
+
     </div>
+
+    <footer>
+        <div class="attribution-wrapper">
+            <p class="attribution">
+                Coded by <a class="attb-link" href="https://twitter.com/CodePapa360" target="_blank">Alamin</a>
+                <br>
+                Challenge by <a class="attb-link attb-fem" href="https://www.frontendmentor.io/profile/CodePapa360" target="_blank">Frontend
+                    Mentor</a>
+            </p>
+        </div>
+    </footer>
 <script src="/news-homepage.3464ddca.js"></script></body>
 </html>
