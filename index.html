@@ -4,11 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- /////////////////////// -->
+
+    <meta
+      name="description"
+      content="Built with JavaScript and API. Made it responsive and added some new features to make it even more user-friendly."
+    />
+    <meta property="og:title" content="Forkify Recipe App | Alamin" />
+    <meta
+      property="og:description"
+      content="Built with JavaScript and API. Made it responsive and added some new features to make it even more user-friendly."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/CodePapa360/Forkify-Recipe-App/main/src/img/forkify-alamin-screenshot.png"
+    />
+    <meta property="og:url" content="https://forkify-alamin.netlify.app/" />
+    <meta name="author" content="Alamin | codpapa360" />
+    <meta
+      name="keywords"
+      content="forkify, jonasschmedtman, jonas schmedtman, alamin, codepapa360, recipe, cooking, food, meal, cuisine, ingredients, dish, kitchen, culinary, nutrition, healthy, diet, baking, vegetarian, vegan, gluten-free, dairy-free, desserts"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Forkify Recipe App | Alamin" />
+    <meta name="twitter:site" content="@https://forkify-alamin.netlify.app/" />
+    <meta
+      name="twitter:description"
+      content="Built with JavaScript and API. Made it responsive and added some new features to make it even more user-friendly."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/CodePapa360/Forkify-Recipe-App/main/src/img/forkify-alamin-screenshot.png"
+    />
+    <meta name="twitter:image:alt" content="Forkify recipe app screenshot" />
+
+    <!-- /////////////////////// -->
+
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="sass/main.scss"> -->
     <script defer src="/script.js"></script>
     <title>Frontend Mentor | News homepage</title>
 </head>
@@ -19,16 +58,28 @@
     <div class="container">
 
         <header class="header">
-            <a class="logo" href="#"><img src="assets/images/logo.svg" alt="Logo"></a>
-            <img class="btn-menu" src="/assets/images/icon-menu.svg" alt="">
+            <a class="logo" target="_blank" href="https://twitter.com/CodePapa360"><img src="assets/images/logo.svg" alt="Logo"></a>
+            <div class="btn-menu" >
+                <img src="/assets/images/icon-menu.svg" alt="">
+            </div>
 
             <ul class="nav-items">
                 <img class="btn-close" src="/assets/images/icon-menu-close.svg" alt="">
-                <li><a class="nav-item" href="#">Home</a></li>
-                <li><a class="nav-item" href="#">New</a></li>
-                <li><a class="nav-item" href="#">Popular</a></li>
-                <li><a class="nav-item" href="#">Trending</a></li>
-                <li><a class="nav-item" href="#">Categories</a></li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">New</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Popular</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Trending</a>
+                </li>
+                <li>
+                    <a class="nav-item" target="_blank" href="https://twitter.com/CodePapa360">Categories</a>
+                </li>
             </ul>
             </nav>
         </header>
@@ -45,7 +96,7 @@
                         <p class="front-news__brief">We dive into the next evolution of the web that claims to put
                             the power of the platforms back into the hands of the people. But is it really
                             fulfilling its promise?</p>
-                        <a class="btn-read-more" href="#">Read more</a>
+                        <a class="btn-read-more" target="_blank" href="https://twitter.com/CodePapa360">Read more</a>
                     </div>
                 </div>
             </section>
@@ -53,20 +104,20 @@
                 <span class="right-section__header">New</span>
                 <ul class="right-section-newses">
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">Hydrogen VS Electric Cars</h2>
                             <p class="right-section-news__brief">Will hydrogen-fueled cars ever catch up to EVs?</p>
                         </a>
                     </li>
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">The Downsides of AI Artistry</h2>
                             <p class="right-section-news__brief">What are the possible adverse effects of on-demand AI
                                 image generation?</p>
                         </a>
                     </li>
                     <li class="right-section__news">
-                        <a href="#">
+                        <a target="_blank" href="https://twitter.com/CodePapa360">
                             <h2 class="right-section-news__header">Is VC Funding Drying Up?</h2>
                             <p class="right-section-news__brief">Private funding by VC firms is down 50% YOY. We take a
                                 look at what that means.</p>
@@ -74,10 +125,10 @@
                     </li>
                 </ul>
             </section>
-            <section class="bottom-newses">
+            <aside class="bottom-newses">
                 <ul class="bottom-newses-container">
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="assets/images/image-retro-pcs.jpg" alt="News thumbnail"
                                 class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
@@ -88,7 +139,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="assets/images/image-top-laptops.jpg" alt="News thumbnail"
                                 class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
@@ -99,7 +150,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="bottom-news">
+                        <a target="_blank" href="https://twitter.com/CodePapa360" class="bottom-news">
                             <img src="assets/images/image-gaming-growth.jpg" alt="News thumbnail"
                                 class="bottom-news__thumbnail">
                             <div class="bottom-news__contents">
@@ -110,8 +161,20 @@
                         </a>
                     </li>
                 </ul>
-            </section>
+            </aside>
         </main>
+
     </div>
+
+    <footer>
+        <div class="attribution-wrapper">
+            <p class="attribution">
+                Coded by <a class="attb-link" href="https://twitter.com/CodePapa360" target="_blank">Alamin</a>
+                <br>
+                Challenge by <a class="attb-link attb-fem" href="https://www.frontendmentor.io/profile/CodePapa360" target="_blank">Frontend
+                    Mentor</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

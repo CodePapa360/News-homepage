@@ -88,6 +88,7 @@ body {
 .overlay {
   height: 100vh;
   width: 100vw;
+  z-index: 9;
   background-color: #0000005e;
   display: none;
   position: fixed;
@@ -98,6 +99,7 @@ body {
 .header {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
@@ -123,6 +125,7 @@ body {
 }
 
 .nav-items {
+  z-index: 10;
   height: 100vh;
   width: 80vw;
   background-color: #fff;
@@ -187,7 +190,12 @@ body {
   letter-spacing: 3px;
   margin-bottom: 1rem;
   padding: .5rem 1.5rem;
+  transition: background-color .3s ease-in-out;
   display: inline-block;
+}
+
+.btn-read-more:hover {
+  background-color: var(--Very-dark-blue);
 }
 
 .right-section {
@@ -199,6 +207,10 @@ body {
 .right-section__news {
   display: block;
   position: relative;
+}
+
+.right-section__news:hover .right-section-news__header {
+  color: var(--Soft-orange);
 }
 
 .right-section__news:not(:last-child) {
@@ -240,13 +252,14 @@ body {
 }
 
 .bottom-newses-container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   display: grid;
 }
 
 .bottom-newses-container li .bottom-news {
-  grid-template-columns: 1fr 1fr;
+  color: unset;
+  grid-template-columns: 7rem auto;
   gap: 1rem;
   display: grid;
 }
@@ -259,16 +272,17 @@ body {
 
 .bottom-newses-container li .bottom-news__count {
   color: var(--Grayish-blue);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .bottom-newses-container li .bottom-news__header {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .bottom-newses-container li .bottom-news__brief {
-  font-size: .8em;
+  color: var(--Dark-grayish-blue);
+  font-size: .9em;
 }
 
 @media screen and (min-width: 367px) {

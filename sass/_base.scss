@@ -5,6 +5,33 @@
   --Grayish-blue: hsl(233, 8%, 79%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
+
+  --bp-large: 78.15em; // 1250px
+  --bp-medium: 61.25em; // 980px
+  --bp-small: 37.5em; // 600px
+  --bp-smallest: 31.25em; // 500px
+
+  //Mobile
+  $bp-mobile: 367px;
+
+  // //mobile
+  // --bp-mobile: 43.75em; // 700px
+  // --bp-mobile-med: 48.75em; // 780px
+  // --header-size-mobile: 18rem;
+}
+
+::selection {
+  background-color: var(--Soft-red);
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  @media only screen and (min-width: 37.5em) {
+    font-size: 1.2rem;
+  }
 }
 
 body {
@@ -25,7 +52,15 @@ body {
 
   @media screen and (min-width: 367px) {
     grid-template-areas:
+      "front front"
+      "right right"
+      "bottom bottom";
+  }
+
+  @media screen and (min-width: 980px) {
+    grid-template-areas:
       "front front right"
       "bottom bottom bottom";
+    gap: 3rem;
   }
 }
