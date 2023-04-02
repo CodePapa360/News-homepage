@@ -13,12 +13,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "targets": {
-    "web": {
-      "context": "browser",
-      "publicUrl": "./"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodePapa360/News-homepage.git"
