@@ -2,9 +2,22 @@
   "name": "news-homepage",
   "version": "1.0.0",
   "description": "Frontend mentor news homepage project",
+  "web": "./dist/index.html",
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./"
+    }
+  },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
+  },
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./"
+    }
   },
   "repository": {
     "type": "git",

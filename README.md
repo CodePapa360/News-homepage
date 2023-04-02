@@ -1,4 +1,8 @@
 <h1 align="center">Frontend Mentor - News homepage solution</h1>
+</br>
+<h2 align="center">
+Check out the <a href="" target="_blank">Live Site here</a>.
+</h2>
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). News homepage is an excellent opportunity to practice CSS Grid skills. There are lots of tricky decisions to make and plenty of learning opportunities!
 
