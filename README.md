@@ -8,11 +8,11 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-#### Desktop preview
+#### Desktop view
 
 <p><img align="center" src="screenshots/News Homepage Challenge - Desktop Screenshot compared.png"/></p>
 
-#### Mobile preview
+#### Mobile view
 
 <p><img align="center" width="30%" src="screenshots/News Homepage Challenge - Mobile Screenshot.png"/></p>
 
@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://news-homepage-alamin.netlify.app/)
+- [Solution URL]()
+- [Live Site URL](https://news-homepage-alamin.netlify.app/)
 
 ## My process
 
